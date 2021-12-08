@@ -1,13 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
 import Header from "../Components/Header";
+import Main from "../Components/Main";
+import Portfolio from "../Components/Portfolio";
+import Whatwedo from "../Components/Whatwedo";
 
 export default function Home() {
   return (
     <>
-      <body className="bg-gray-900">
+      <div className="bg-gray-900">
         <Header />
-      </body>
+        <Main />
+        <Whatwedo />
+        <Portfolio />
+      </div>
     </>
   );
 }

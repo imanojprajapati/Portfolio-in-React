@@ -5,22 +5,22 @@ import styles from "../../styles/Header.module.css";
 export default class Header extends Component {
   render() {
     return (
-      <header>
-        <div className="container mx-auto bg-gray-900 flex items-end">
-          <div className="grid-cols-3 p-4">
-            <Image alt="" src="/logo.png" height={100} width={200} />
-          </div>
-          <div className="grid-cols-9 p-4">
-            <div className="xl:col-start-4 px-4 mb-14">
-              <ul className="flex items-end text-white p-4 transition-all">
-                <li className="rounded-lg mx-4">Home</li>
-                <li className="rounded-lg mx-4">About us</li>
-                <li className="rounded-lg mx-4">Portfolio</li>
-                <li className="rounded-lg mx-4">Contact us</li>
-              </ul>
-            </div>
-          </div>
+      <header className="h-28 bg-gray-700 absolute w-screen text-white flex justify-between items-center px-20">
+        <div id="logo">
+          <Image src="/manoj.png" height={90} width={200} alt=""></Image>
         </div>
+        <nav>
+          <ul className="flex">
+            <li className="m-4">Home</li>
+            <li className="m-4">Features</li>
+            <li className="m-4">Portfolio</li>
+            <li className="m-4">Resume</li>
+            <li className="m-4">Clients</li>
+            <li className="m-4">Pricing</li>
+            <li className="m-4">Blog</li>
+            <li className="m-4 mr-0">Contact</li>
+          </ul>
+        </nav>
       </header>
     );
   }
